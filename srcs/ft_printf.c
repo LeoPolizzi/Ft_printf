@@ -91,11 +91,11 @@ int main() {
     printf("\nTest 3: Integers\n");
     ft_printf("Integer: %d\n", 42);
     ft_printf("Integer: %d\n", -42);
-    ft_printf("Integer: %d\n\n", 0);
+    ft_printf("Integer: %d\n\n", INT_MAX + 1);
     printf("Integer: %d\n", 42);
     printf("Integer: %d\n", -42);
-    printf("Integer: %d\n", 0);
-    
+    printf("Integer: %d\n", INT_MAX + 1);
+
     printf("\nTest 4: Unsigned Integers\n");
     ft_printf("Unsigned: %u\n", 42);
     ft_printf("Unsigned: %u\n", -42); // should handle as unsigned
@@ -116,7 +116,7 @@ int main() {
     ft_printf("Hexadecimal (uppercase): %X\n\n", 255);
     printf("Hexadecimal (lowercase): %x\n", 255);
     printf("Hexadecimal (uppercase): %X\n", 255);
-    
+
     printf("\nTest 7: Percent Sign\n");
     ft_printf("Percent sign: %%\n\n");
     printf("Percent sign: %%\n");
@@ -126,7 +126,7 @@ int main() {
     ft_printf("Large negative: %d\n\n", INT_MIN);
     printf("Large positive: %d\n", INT_MAX);
     printf("Large negative: %d\n", INT_MIN);
-    
+
     printf("\nTest 9: Mixed Formats\n");
     ft_printf("Mixed: %d, %u, %s, %p\n\n", -1, 1u, "Test", (void*)0x12345678);
     printf("Mixed: %d, %u, %s, %p\n", -1, 1u, "Test", (void*)0x12345678);
